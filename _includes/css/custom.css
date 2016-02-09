@@ -193,3 +193,7 @@ section h3.section-subheading {
 #research video {
     max-height: 300px; 
 }
+
+#footer {
+    margin-top: 25px;   
+}
