@@ -1,0 +1,13 @@
+url: https://latture.github.io
+baseurl: /zok-group-website/
+
+title: Zok Research Group
+
+color:
+    primary: 2196F3
+    secondary: 9E9E9E
+
+markdown: kramdown
+permalink: pretty
+
+exclude: ["README.md"]

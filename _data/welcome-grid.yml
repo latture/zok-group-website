@@ -1,0 +1,11 @@
+- title : People
+  image : people-logo.jpg
+  href  : people
+
+- title : Research
+  image : research-logo.jpg
+  href  : research
+
+- title : Publications
+  image : publications-logo.jpg
+  href  : publications

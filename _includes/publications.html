@@ -1,0 +1,8 @@
+<section id="publications">
+    <div class="container">
+    <h2>Publications</h2>
+    {% for publication in site.data.publications-all limit:15 %}
+        <p>{{publication.data}}</p>
+    {% endfor %}
+   </div>
+</section>

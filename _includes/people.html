@@ -1,0 +1,63 @@
+<section id="people">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="section-heading">Group members</h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for person in site.data.people %}
+            <div class="col-md-6">  
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row row-eq-height">
+                            <div class="col-xs-4">
+                                <div class="thumbnail">
+                                    <img class="img-responsive img-center" src="{{site.baseurl}}/img/people/{{person.image}}" alt="Photo of {{person.name}}">
+                                </div>
+                            </div>
+                            <div class="col-xs-8">
+                                <h4>{{person.name}}</h4>
+                                <div class="underline-primary"></div>
+                                <p>{{person.title}}</p>
+
+                                {% if person.undergraduate-degree %} 
+                                <p>
+                                    {{person.undergraduate-degree}}
+
+                                    {% if person.undergraduate-degree-title %} 
+                                    <br>{{person.undergraduate-degree-title}}
+                                    {% endif %}      
+                                </p>
+                                {% endif %}
+
+                                {% if person.graduate-degree %} 
+                                <p>
+                                    {{person.graduate-degree}}
+
+                                    {% if person.graduate-degree-title %} 
+                                    <br>{{person.graduate-degree-title}}
+                                    {% endif %}      
+                                </p>
+                                {% endif %}
+
+                                {% if person.principle-advisor %}
+                                <p>Principle advisor: {{person.principle-advisor}}</p>
+                                {% endif %}
+
+                                {% if person.research-interests %}
+                                <p>Research interests: {{person.research-interests}}</p>
+                                {% endif %}
+
+                                {% if person.email %}
+                                <p><a href="mailto:{{person.email}}">{{person.email}}</a></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

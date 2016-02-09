@@ -1,0 +1,42 @@
+
+   <div class="container" id="research-arch-mats">
+        <h3>Architectured Materials: Foams, Lattices and Sandwiches</h3>
+        <p>Inspired by the exquisite cellular assemblies found in Nature, we are pursuing strategies for the design of new synthetic ultra-lightweight structural materials with unprecedented property profiles, including high specific stiffness and strength as well as energy absorbing capabilities. On one front, large-scale computations are being used to sweep through multi-dimensional design spaces and identify designs of periodic cellular structures with desirable characteristics. Collaborative activities with ARL are focused on manufacturing of new structures via additive manufacturing routes. Numerical approaches for solving problems in complex nonlinear systems are also being developed and used for simulation and design of novel lattices that employ an elastic snap-through instability to provide high dynamic energy dissipation. In parallel, a framework within which strut-based truss structures can be systematically classified has been devised and is being used to identify truss topologies with unique mechanical and functional properties.</p>
+        <p>Check out some of our <a href="#recent-publications-arch-mats" class="page-scroll">recent publications.</a></p>
+        <div class="row row-centered">
+            <div class="col-md-6">
+                <img src="{{site.baseurl}}/img/research/arch-mats/dynamic-crushing.jpg" alt="Dynamic crushing of truss" class="img-responsive img-centered">
+                <div class="caption text-left">
+                    <p>Finite element simulation of dynamic crushing of one unit cell of a polymeric truss structure</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <img src="{{site.baseurl}}/img/research/arch-mats/image26.png" alt="Evolution of BCC stiffness surface" class="img-responsive img-centered">
+                <div class="caption text-left">
+                    <p>Polar plots of Young’s modulus: Evolution in compound trusses.</p>
+                </div>
+            </div>
+       </div>
+        <div class="row row-centered">
+            <div class="col-md-6">
+                <img src="{{site.baseurl}}/img/research/arch-mats/compound-trusses.jpg" alt="Three compound trusses" class="img-responsive img-centered">
+                <div class="caption text-left">
+                    <p>Compound cubic trusses</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <img src="{{site.baseurl}}/img/research/arch-mats/metallic-sandwich.jpg" alt="Metallic sandwich panels" class="img-responsive img-centered">
+                <div class="caption text-left">
+                    <p>Metallic sandwich panels with honeycomb or truss cores</p>
+                </div>
+            </div>
+        </div>
+        <div id="recent-publications-arch-mats" class="recent-publications">
+        <h3>Recent publications</h2>
+        {% for publication in site.data.publications-arch-mats %}
+            <p>{{publication.data}}</p>
+        {% endfor %}
+        </div>
+    </div>

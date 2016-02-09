@@ -1,0 +1,36 @@
+
+   <div class="container" id="research-threat-protection">
+        <h3>Materials for Threat Protection: Ceramics, Cermets and Fiber Composites</h3>
+        <p>Design of improved ballistic protection systems can be aided significantly with computational simulations. Simulations allow for efficient scanning of a wide design space as well as a broad range of impact scenarios. They also allow assessment of the efficacy of multi-layered multi-material systems. But the fidelity of computed outcomes is predicated on the use of high-fidelity models of material deformation, comminution and fracture under very high strain rates. The goal of our research program has been to advance the understanding of damage and failure modes in armor ceramics and cermets as well as the deformation response of high-performance fiber-reinforced polymer composites. To this end, we have devised and executed experiments that allow for critical assessments of the predictive capabilities of existing and new emerging constitutive models.</p>
+        <p>Check out our <a href="#recent-publications-threat-protection" class="page-scroll">recent publications.</a></p>
+        <div class="row row-centered">
+            <div class="col-md-4">
+                <img src="{{site.baseurl}}/img/research/threat-protection/alumina-cracking.jpg" alt="Photo of alumina cracking" class="img-responsive img-centered">
+                <div class="caption text-left">
+                    <p>Impact damage on alumina tile (B.G. Compton).</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{{site.baseurl}}/img/research/threat-protection/damage-velocity-comp.png" alt="Damage velocity comparison" class="img-responsive img-centered">
+                <div class="caption text-left">
+                    <p>Computed and observed damage patterns in impacted alumina tiles. Computed results taken at 17 ms from first contact (immediately after projectile rebound).</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+<!--                <div align="center" class="embed-responsive embed-responsive-16by9">-->
+                    <video controls autoplay loop class="embed-responsive-item">
+                        <source src="{{site.baseurl}}/img/research/threat-protection/xct.mp4" type="video/mp4"> Your browser does not support video.
+                    </video>
+<!--                </div>-->
+                <div class="caption text-left">
+                    <p>Video of x-ray computed tomography images of crack pattern in alumina after high velocity impact (E.A. Gamble, A.N. Seagraves).</p>
+                </div>
+            </div>
+        </div>
+        <div id="recent-publications-threat-protection" class="recent-publications">
+        <h3>Recent publications</h2>
+        {% for publication in site.data.publications-threat-protection %}
+            <p>{{publication.data}}</p>
+        {% endfor %}
+        </div>
+    </div>
