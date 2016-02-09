@@ -1,4 +1,6 @@
-<!-- Navigation -->
+{% assign current = page.url | downcase | split: '/' %}
+  
+   <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,31 +18,26 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="{{site.baseurl}}/"></a>
+                        <a href="{{site.baseurl}}/" class="{{current}}"></a>
                     </li>
                     <li>
-                        <a href="{{site.baseurl}}/">Home</a>
+                        <a href="{{site.baseurl}}/" {% if current[1] == '' %}class='active'{% endif %}>Home</a>
                     </li>
                     <li>
-                        <a href="{{site.baseurl}}/bio/">PI Bio</a>
+                        <a href="{{site.baseurl}}/bio/" {% if current[1] == 'bio' %}class='active'{% endif %}>PI Bio</a>
                     </li>
                     <li>
-                        <a href="{{site.baseurl}}/people/">People</a>
+                        <a href="{{site.baseurl}}/people/" {% if current[1] == 'people' %}class='active'{% endif %}>People</a>
                     </li>
                     <li>
-                        <a href="{{site.baseurl}}/research/">Research</a>
+                        <a href="{{site.baseurl}}/research/" {% if current[1] == 'research' %}class='active'{% endif %}>Research</a>
                     </li>
                     <li>
-                        <a href="{{site.baseurl}}/publications/">Publications</a>
+                        <a href="{{site.baseurl}}/publications/" {% if current[1] == 'publications' %}class='active'{% endif %}>Publications</a>
                     </li>
                     <li>
-                        <a href="{{site.baseurl}}/contact/">Contact</a>
+                        <a href="{{site.baseurl}}/contact/" {% if current[1] == 'contact' %}class='active'{% endif %}>Contact</a>
                     </li>
-<!--
-                    <li>
-                        <a href="#whimsy">Whimsy</a>
-                    </li>
--->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
