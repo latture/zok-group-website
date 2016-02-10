@@ -1,28 +1,17 @@
     <div class="container" id="welcome">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="section-heading text-center">Welcome</h1>
-                <div class="underline-primary"></div>
-                <h4 class="section-subheading">Welcome to the Zok Research Group. Our research addresses issues in design, synthesis and properties of advanced thermostructural materials and systems. Current activities focus on high-temperature ceramic composites for use in future propulsion systems in aircraft engines and in hypersonic flight vehicles, protection systems for mitigating blast and ballistic threats, and lightweight lattice structures with high specific strength and high straining capability. The research combines experiments with theory and numerical simulation.</h4>
-            </div>
+        <div class="welcome-banner">
+            <h1 class="welcome-banner-heading">Welcome</h1>
+            <h4 class="welcome-banner-subheading">Welcome to the Zok Research Group. Our research addresses issues in design, synthesis and properties of advanced thermostructural materials and systems. Current activities focus on high-temperature ceramic composites for use in future propulsion systems in aircraft engines and in hypersonic flight vehicles, protection systems for mitigating blast and ballistic threats, and lightweight lattice structures with high specific strength and high straining capability. The research combines experiments with theory and numerical simulation.</h4>
         </div>
 
         <div class="container">
             <div class="row">
             {% for post in site.data.welcome-grid %}
-                <div class="col-md-4">
-                   <div class="welcome-item">
-                        <div class="welcome-caption">
-                            <h3>{{ post.title }}</h3>
-                            <div class="gradient-underline-secondary"></div>
-                        </div>
+              <div class="col-md-4">
+                   <div class="welcome-item center-block">
+                        <h3 class="welcome-title">{{post.title}}</h3>
                         <a href="{{site.baseurl}}/{{post.href}}/" class="welcome-link">
-<!--                            <div class="welcome-hover">
-                                <div class="welcome-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>-->
-                            <img src="{{site.baseurl}}/img/welcome/{{post.image}}" class="img-responsive img-centered" alt="">
+                            <img src="{{site.baseurl}}/assets/img/welcome/{{post.image}}" class="img-responsive" alt="{{post.title}}">
                         </a>
                     </div>
                 </div>

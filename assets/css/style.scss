@@ -1,0 +1,105 @@
+---
+---
+$brand-primary: #{{site.color.primary}};
+$brand-secondary: #{{site.color.secondary}};
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+// Import Bootstrap for Sass
+@import "bootstrap";
+@import "bootstrap/mixins";
+
+body {
+    margin-top: 50px;
+}
+
+
+/*
+********* Welcome *********
+*/
+#welcome {
+    .welcome-banner {
+        @include make-lg-column(12);
+        margin-bottom: 25px;
+
+        .welcome-banner-heading {
+            text-align: center;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $brand-primary;
+        }
+    }
+
+    .welcome-item {
+        max-width: 250px;
+        text-align: center;
+
+        .welcome-title {
+            margin: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $brand-secondary;
+        }
+    }
+}
+
+/*
+********* Bio *********
+*/
+
+#bio {
+    .panel {
+        border: none;
+    }
+
+    .thumbnail {
+        margin-top: 25px;
+        max-width: 250px;
+    }
+}
+
+/*
+********* People *********
+*/
+#people {
+    .panel {
+        border: none;
+    }
+
+    .panel-body {
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .thumbnail {
+        margin-top: 10px;
+        max-width: 150px;
+    }
+
+    .person-name {
+        padding-bottom: 5px;
+        border-bottom: 2px solid $brand-primary;
+    }
+}
+
+/*
+********* People *********
+*/
+#research {
+    .research-seperator, .row, .recent-publications {
+        margin-top: 2 * $line-height-computed;
+    }
+
+    img,video {
+        max-height: 300px;
+    }
+
+    #research-arch-mats>img {
+        max-height: 180px;
+    }
+}
+
+/*
+********* Footer *********
+*/
+#footer {
+    margin-top: 25px;
+}
