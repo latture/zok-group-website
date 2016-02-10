@@ -104,7 +104,11 @@ body {
         max-height: 300px;
     }
 
-    #research-arch-mats>img {
+    #research-threat-protection img,video {
+        max-height: 250px;
+    }
+
+    #research-arch-mats img {
         max-height: 180px;
     }
 }
