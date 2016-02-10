@@ -2,6 +2,8 @@
 ---
 $brand-primary: #{{site.color.primary}};
 $brand-secondary: #{{site.color.secondary}};
+$font-family-sans-serif:  "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif-heading: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Import Bootstrap for Sass
 @import "bootstrap";
@@ -20,6 +22,7 @@ body {
         margin-bottom: 25px;
 
         .welcome-banner-heading {
+            font-family: $font-family-sans-serif-heading;
             text-align: center;
             padding-bottom: 5px;
             border-bottom: 2px solid $brand-primary;
@@ -31,6 +34,7 @@ body {
         text-align: center;
 
         .welcome-title {
+            font-family: $font-family-sans-serif-heading;
             margin: 10px;
             padding-bottom: 5px;
             border-bottom: 2px solid $brand-secondary;
