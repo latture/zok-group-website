@@ -19,3 +19,12 @@ $(function() {
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
+
+$(document).ready(function() {  
+	$('#carousel-generic').hammer().on('swipeleft', function(){
+			$(this).carousel('next'); 
+		})
+		$('#carousel-generic').hammer().on('swiperight', function(){
+			$(this).carousel('prev'); 
+		})
+ });
