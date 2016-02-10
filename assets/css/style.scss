@@ -93,7 +93,6 @@ body {
 */
 #research {
     .container {
-        margin-top: 0px;
         padding-top: 40px;
     }
 
@@ -101,8 +100,12 @@ body {
         font-family: $font-family-sans-serif-heading;        
     }
     
-    .research-seperator, .row, .recent-publications {
+    .row {
         margin-top: 2 * $line-height-computed;
+    }
+
+    .recent-publications {
+        margin-top: $line-height-computed;
     }
 
     img,video {
