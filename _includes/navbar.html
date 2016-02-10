@@ -1,4 +1,6 @@
 {% assign current = page.url | downcase | split: '/' %}
+{% assign researchDropdownClass = '' %}
+{% if current[1] == 'research' %}{% assign researchDropdownClass = 'page-scroll' %}{% endif %}
   
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -29,9 +31,9 @@
                 <li class="dropdown {% if current[1] == 'research' %}active{% endif %}">
                   <a href="{{site.baseurl}}/research/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{site.baseurl}}/research/#research-high-temp">High Temperature Ceramics</a></li>
-                    <li><a href="{{site.baseurl}}/research/#research-arch-mats">Architectured Materials</a></li>
-                    <li><a href="{{site.baseurl}}/research/#research-threat-protection">Materials for threat protection</a></li>
+                    <li><a href="{% if current[1] != 'research' %}{{site.baseurl}}/research{% endif %}#research-high-temp" class={{researchDropdownClass}}>High Temperature Ceramics</a></li>
+                    <li><a href="{% if current[1] != 'research' %}{{site.baseurl}}/research{% endif %}#research-arch-mats" class={{researchDropdownClass}}>Architectured Materials</a></li>
+                    <li><a href="{% if current[1] != 'research' %}{{site.baseurl}}/research{% endif %}#research-threat-protection" class={{researchDropdownClass}}>Materials for threat protection</a></li>
                   </ul>
                 </li>
                 <li {% if current[1] == 'publications' %}class='active'{% endif %}>
