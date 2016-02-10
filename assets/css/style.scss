@@ -4,6 +4,7 @@ $brand-primary: #{{site.color.primary}};
 $brand-secondary: #{{site.color.secondary}};
 $font-family-sans-serif:  "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-sans-serif-heading: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navbar-height: 60px;
 
 @import "bootstrap";
 @import "bootstrap/mixins";
@@ -15,6 +16,23 @@ $font-family-sans-serif-heading: "Muli", "Helvetica Neue", Helvetica, Arial, san
 body {
     margin-top: 50px;
 }
+
+/*
+********* Navbar *********
+*/
+
+.navbar-brand {
+    text-align: center;
+    padding: 5px 5px 5px 10px;
+
+    .navbar-brand-heading {
+        font-family: $font-family-sans-serif-heading;
+        padding-bottom: 2px;
+        margin: 2px;
+        @include border-bottom($brand-primary);
+    }
+}
+ 
 
 /*
 ********* Welcome *********
