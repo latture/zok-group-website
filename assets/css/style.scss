@@ -3,8 +3,6 @@
 $brand-primary: #{{site.color.primary}};
 $brand-secondary: #{{site.color.secondary}};
 
-// Import custom Bootstrap variables
-@import "bootstrap-variables";
 // Import Bootstrap for Sass
 @import "bootstrap";
 @import "bootstrap/mixins";
