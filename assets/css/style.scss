@@ -5,9 +5,12 @@ $brand-secondary: #{{site.color.secondary}};
 $font-family-sans-serif:  "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-sans-serif-heading: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Import Bootstrap for Sass
 @import "bootstrap";
 @import "bootstrap/mixins";
+
+@mixin border-bottom($color) {
+    border-bottom: 1px solid $color;
+}
 
 body {
     margin-top: 50px;
@@ -25,7 +28,7 @@ body {
             font-family: $font-family-sans-serif-heading;
             text-align: center;
             padding-bottom: 5px;
-            border-bottom: 1px solid $brand-primary;
+            @include border-bottom($brand-primary);
         }
     }
 
@@ -37,7 +40,7 @@ body {
             font-family: $font-family-sans-serif-heading;
             margin: 10px;
             padding-bottom: 5px;
-            border-bottom: 1px solid $brand-secondary;
+            @include border-bottom($brand-secondary);
         }
     }
 }
@@ -57,7 +60,7 @@ body {
     }
     
     .bio-heading {
-        border-bottom: 1px solid $brand-primary;
+        @include border-bottom($brand-primary);
     }
 }
 
@@ -81,7 +84,7 @@ body {
 
     .person-name {
         padding-bottom: 5px;
-        border-bottom: 1px solid $brand-primary;
+        @include border-bottom($brand-primary);
     }
 }
 
