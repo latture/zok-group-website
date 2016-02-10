@@ -32,10 +32,21 @@
             </div>
         </div>
     </div>
-    <div id="recent-publications-arch-mats" class="recent-publications">
-    <h4>Recent publications</h4>
-    {% for publication in site.data.publications-arch-mats %}
-        <p>{{publication.data}}</p>
-    {% endfor %}
+
+    <div class="panel panel-default recent-publications" id="recent-publications-arch-mats">
+        <div class="panel-heading" role="tab" id="archMatsHeading">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#archMatsCollapse" aria-expanded="false" aria-controls="archMatsCollapse">
+              Recent publications <span class="caret"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="archMatsCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="archMatsHeading">
+          <div class="panel-body">
+            {% for publication in site.data.publications-arch-mats %}
+                <p>{{publication.data}}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
-</div>

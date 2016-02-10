@@ -25,10 +25,21 @@
             </div>
         </div>
     </div>
-    <div id="recent-publications-threat-protection" class="recent-publications">
-    <h4>Recent publications</h4>
-    {% for publication in site.data.publications-threat-protection %}
-        <p>{{publication.data}}</p>
-    {% endfor %}
-    </div>
+    
+    <div class="panel panel-default recent-publications" id="recent-publications-threat-protection">
+        <div class="panel-heading" role="tab" id="threatProtectionHeading">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#threatProtectionCollapse" aria-expanded="false" aria-controls="threatProtectionCollapse">
+              Recent publications <span class="caret"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="threatProtectionCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="threatProtectionHeading">
+          <div class="panel-body">
+            {% for publication in site.data.publications-arch-mats %}
+                <p>{{publication.data}}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
 </div>

@@ -17,10 +17,20 @@
             </div>
         </div>
     </div>
-    <div id="recent-publications-high-temp" class="recent-publications">
-    <h4>Recent publications</h4>
-    {% for publication in site.data.publications-high-temp %}
-        <p>{{publication.data}}</p>
-    {% endfor %}
-    </div>
+    <div class="panel panel-default recent-publications" id="recent-publications-high-temp">
+        <div class="panel-heading" role="tab" id="highTempHeading">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#highTempCollapse" aria-expanded="false" aria-controls="highTempCollapse">
+              Recent publications <span class="caret"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="highTempCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="highTempHeading">
+          <div class="panel-body">
+            {% for publication in site.data.publications-arch-mats %}
+                <p>{{publication.data}}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
 </div>
