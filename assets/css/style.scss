@@ -88,15 +88,18 @@ body {
 #people {
     .panel {
         border: none;
+        @include box-shadow(0 0 0 rgba(0,0,0,0));
+        margin: 0px 10px 0px 10px;
     }
 
     .panel-body {
-        min-height: 250px;
-        max-height: 250px;
+        padding: 0px;
+        min-height: 275px;
+        max-height: 275px;
     }
 
     .thumbnail {
-        margin-top: 10px;
+        margin-top: 20px;
         max-width: 150px;
     }
 
