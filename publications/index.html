@@ -4,6 +4,17 @@ layout: default
 <section id="publications">
     <div class="container">
     <h3 class="publications-header">Publications</h3>
+    <div class="alert alert-info alert-dismissable" role="alert">
+        <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+            &times;
+        </button>
+        <p>A note on using Web of Science (WOS) accession numbers:</p>
+        <ol>
+            <li>Copy WOS number</li>
+            <li>Go to the <a href="http://apps.webofknowledge.com/WOS_AdvancedSearch_input.do?SID=1DOWUJA3ikLe5dhlqNK&product=WOS&search_mode=AdvancedSearch">WOS Advanced Search Tool</a></li>
+            <li>Type UT= followed by the WOS number listed below and click on Search.</li>
+        </ol>
+    </div>
     {% for publication in site.data.publications-all %}
         <p>{{publication.data}}</p>
     {% endfor %}
