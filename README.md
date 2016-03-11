@@ -1,7 +1,7 @@
 Zok Group Website
 =================
 
-Currently under construction. Check back later for updates.
+Source code for the Zok group website. The site can be viewed at: http://engineering.ucsb.edu/~zokgroup/
 
 Contact
 -------
